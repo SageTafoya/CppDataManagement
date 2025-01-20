@@ -2,7 +2,7 @@
 Skeleton code for storage management
 */
 
-#include <iostream>
+
 
 #include <string>
 #include <ios>
@@ -15,7 +15,8 @@ Skeleton code for storage management
 #include <stdexcept>
 #include <cmath>
 #include "classes-4.h"
-// using namespace std;
+
+using namespace std;
 
 int main(int argc, char* argv[]) {
 

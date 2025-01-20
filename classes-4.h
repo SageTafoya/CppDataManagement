@@ -100,7 +100,40 @@ public:
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            cout << line << endl;
+            // cout << line << endl;
+
+            // stringstream ss(line);
+            
+            // string token;
+
+            // getline(ss, token, ',');
+
+            int linelen = line.length();
+
+            int commastart, commaend; 
+
+            string tempscreen;
+
+            commaend = line.find(',');
+
+            cout << line.substr(0, commaend) << endl;
+
+            // cout << line.substr(++commastart, linelen).find(',') << endl;
+
+            commaend = line.substr(++commastart, linelen).find(',');
+
+            cout << line.substr(commastart, commaend) << endl;
+
+            commastart = commaend;
+
+            commaend = line.substr(++commaend, linelen).find(',');
+
+         
+
+            cout << endl << endl << endl;
+
+
+
 
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
