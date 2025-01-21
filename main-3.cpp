@@ -3,7 +3,7 @@ Skeleton code for storage management
 */
 
 
-
+#include <regex>
 #include <string>
 #include <ios>
 #include <fstream>
@@ -33,6 +33,46 @@ int main(int argc, char* argv[]) {
 
     // Searching for Employee IDs Using [manager.findAndPrintEmployee(id)]
     /***TO_DO***/ 
+
+
+
+
+    bool keepask = true;
+    string chooseTask;
+    
+
+    while(keepask)
+    {
+        cout << endl;
+        cout << "(1)Press [s] to search for employee by ID: " << endl;
+        cout << "(2)Press [x] to exit: " << endl;
+        cout << "Input: ";
+        cin >> chooseTask;
+        int empid;
+        cout << endl;
+        if(chooseTask == "s" || chooseTask == "S")
+        {
+            cin.clear();
+            empid = 0;
+            cout << "Enter the employee's id to search for: ";
+            cin >> empid;
+            cout << endl;
+            // cout << empid+1 << endl;
+
+            // cout << empid << endl;
+            manager.findAndPrintEmployee(empid);
+         
+
+        }
+        else if(chooseTask == "x" || chooseTask == "X")
+        {
+            keepask = false;
+            break;
+        }
+        cout << endl;
+
+    }
+
 
     return 0;
 }
