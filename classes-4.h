@@ -114,21 +114,50 @@ public:
 
             string tempscreen;
 
+
+
+            ///////////////////////////////////// print emp id
             commaend = line.find(',');
 
             cout << line.substr(0, commaend) << endl;
 
-            // cout << line.substr(++commastart, linelen).find(',') << endl;
+            id = stoi(line.substr(0, commaend));
 
-            commaend = line.substr(++commastart, linelen).find(',');
+            ///////////////////// name
+            
+            commastart = commaend+1;
+
+            commaend = line.substr(commastart, linelen).find(',');
+
 
             cout << line.substr(commastart, commaend) << endl;
 
-            commastart = commaend;
+            name = line.substr(commastart, commaend);
 
-            commaend = line.substr(++commaend, linelen).find(',');
+            //////////////////////////// words
 
-         
+
+            // cout << line.substr(commaend, linelen) << endl;
+            // commaend += commastart+1;
+
+            commastart += commaend+1;
+
+            commaend = line.substr(commastart, linelen).find(',');
+
+            cout << line.substr(commastart, commaend) << endl;
+
+            bio = line.substr(commastart, commaend);
+
+            //////////////////////////manager ID
+            commastart += commaend+1;
+
+            commaend = line.substr(commastart, linelen).find(',');
+
+            cout << line.substr(commastart, commaend) << endl;
+
+            manager_id = stoi(line.substr(commastart, commaend));
+
+            //////////////////////////
 
             cout << endl << endl << endl;
 
