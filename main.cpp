@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
 
     // Assuming the Employee.CSV file is in the same directory, 
     // we want to read from the Employee.csv and write into the new data_file
-    manager.createFromFile("Employee-2.csv");
+    manager.createFromFile("Employee.csv");
 
     // Searching for Employee IDs Using [manager.findAndPrintEmployee(id)]
     /***TO_DO***/ 
