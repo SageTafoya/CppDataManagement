@@ -211,7 +211,7 @@ public:
 
             if(emp.id == searchId )
             {
-                cout << "////////////////////////////////////////////////////////////////////////////" << endl;
+                cout << "//////////////////////////////////SEARCH RESULT/////////////////////////////" << endl;
                 cout << "Name:" << endl;
                 cout << "   " << emp.name << endl << endl;
                 cout << "Id:" << endl;
@@ -228,7 +228,7 @@ public:
             if(!data_file)
             {
                 cout << "There is No employee with ID: " << searchId << endl;
-               /////////////////////////////////////////////////////////////////////" << endl;    
+               /////////////////////Search Result///////////////////////////////////" << endl;    
                 data_file.clear(); // need to clear end of file flag so it restarts properly
                 data_file.seekg(0, ios::beg);
                 break;

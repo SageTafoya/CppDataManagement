@@ -1,7 +1,12 @@
 /*
 Skeleton code for storage management
 */
-
+/////////////////////////////////////////////////////
+//Name: Sage Tafoya
+//ID: 934301772
+//Email: tafoyas@oregonstate.edu
+//Onid: tafoyas
+/////////////////////////////////////////////////////
 
 #include <regex>
 #include <string>
@@ -54,9 +59,9 @@ int main(int argc, char* argv[]) {
         {
             cin.clear();
             empid = 0;
-            cout << "Enter the employee's id to search for: ";
+            cout << "Enter the employee's id to search for(Positive Integer Only): ";
             cin >> empid;
-            cout << endl;
+            cout << endl<< endl<< endl<< endl << endl << endl;
             // cout << empid+1 << endl;
 
             // cout << empid << endl;
